@@ -12,7 +12,7 @@
 /* Desktop Styles */
 /* Navbar */
 
-    header {
+    #nav-bar {
         align-items: center;
         display: flex;
         justify-content: space-between;
@@ -20,17 +20,17 @@
         width: 100%;
     }
     
-    header ul {
+    #nav-bar ul {
         display: flex;
         gap: 2em;
     }
     
-    header nav ul a {
+    #nav-bar nav ul a {
         color: #242E52;
         font-weight: 500;
     }
     
-    header nav ul a:hover {
+    #nav-bar nav ul a:hover {
         color: #aaaebc;
     }
     
@@ -43,32 +43,31 @@
         font-weight: 500;
     }
     
-    /* Section 1 */
+    /* Sección del banner */
     
-    .first-section {
+    .banner-section {
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding: 5em;
+        gap: 6em;
     }
     
-    .img-fs {
+    .img-sportman {
         width: 540px;
     }
     
-    .first-s-content {
+    .banner-content {
         display: flex;
         align-items: end;
         flex-direction: column;
         gap: 2em;
-        width: 45%;
     }
     
-    .first-s-content p {
+    .banner-content p {
         font-size: 17px;
         font-weight: 500;
         line-height: 26px;
-        letter-spacing: 0em;
         text-align: right;
     }
     
@@ -81,14 +80,18 @@
         text-align: right;
     }
     
-/* Section 2 */
-.second-section {
+/* What's different btw Pros */
+
+.purple-section {
     background-color:#8b48bf;
     color:#FFFFFF;
     display: flex;
     padding: 2em 10em;
     align-items: center;
     justify-content: space-between;
+}
+
+#pros {
     gap: 2em;
 }
 
@@ -103,8 +106,8 @@ h2 {
     line-height: 24px;
     text-align: left;    
 }
-/* Section 3 */
-.third-section {
+/* Sección sobre ventajas */
+.advantages {
     background-color: #fafafa;
     padding: 3em 8em;
     display: flex;
@@ -114,7 +117,7 @@ h2 {
     justify-content: center;
 }
 
-.btn-th {
+.btn-th, .btn-mb, .btn-card {
     background-color: #8B48BF;
     color: #FFFFFF;
     padding: 10px 25px 10px 25px;
@@ -132,7 +135,7 @@ h4 {
     text-align: left;
 }
 
-.third-section p {
+.advantages p {
     color: #B3B2B7;
     font-weight: 500;
     line-height: 26px;
@@ -148,15 +151,15 @@ h4 {
     width: 450px;
 }
 
-/* Section 4 */
-.fourth-section {
+/* Cards */
+.cards-section {
     padding: 6em 4em;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2em;
 }
-.fourth-section h2 {
+.cards-section h2 {
     color:#242E53;
     font-size: 39px;
     font-weight: 700;
@@ -165,7 +168,7 @@ h4 {
     text-align: center;
 }
 
-.fourth-section article {
+.cards-section article {
     background-color: #fafafa;
     display: flex;
     gap: 2em;
@@ -175,26 +178,31 @@ h4 {
 
 }
 
-.fourth-section article figure {
+.cards-section article figure {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2em;
+    position: relative;
 }
 
-.fourth-section h3 {
+.circle-img {
+    margin-top: -50px;
+}
+
+.cards-section h3 {
     color: #3F4868;
     font-size: 16px;
 }
 
-.fourth-section figure p {
+.cards-section figure p {
     color:#B9B9C1;
     font-weight: 500;
     line-height: 25px;
     text-align: center;
 }
 
-/* Section 5 */
+/* Best team of the year */
 .title {
     width: 393px;
 }
@@ -210,73 +218,95 @@ h4 {
 /* Footer styles */
 footer {
     background-color:#1E1E26;
-    ;
+    padding: 100px;
+}
+
+footer .container {
+    display: flex;
+    /* gap: 4em; */
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .brand {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 4em;
+}
+
+footer nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 500px;
+}
+
+form {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5em;
+    
+}
+
+.copyright {
+    display: flex;
+    justify-content: flex-end;
 }
 
 footer a {
     color: #FFFFFF;
     font-weight: 400;
-    line-height: 23px;
+    line-height: 30px;
     text-align: left;
-
 }
 
-footer p {
+.copyright p {
     color: #8C8C94;
 }
 
 form input {
     background-color: #ffffff;
-    padding: 10px 25px 10px 25px;
-    border-radius: 30px; 
+    padding: 10px 25px;
+    border-radius: 100px; 
     outline: none;
+    font-weight: bold;
 }
 
+#menu-responsive-btn {
+    display: none;
+}
 
-
-
-
-@media (min-width: 481) {
-    .menu {
-        display: none;
-    }
-
-    .second-section {
-        display: flex;
-        padding: 2em 10em;
-        align-items: center;
-        justify-content: space-between;
-        gap: 2em;
-    }
-    
-    .left-text {
-        width: 55%;
-    }
-    
-    .right-text {
-        width: 40%;
-    }
-    
+#title-section {
+    display: none;
 }
 
 /* Mobile styles */
 
-@media (max-width: 480px) {
-    /* Section 1 */
-    header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+@media (max-width: 600px) {
+    #nav-bar {
+        padding: 2em 1em;
     }
 
-    .first-section {
-        display: flex;
+    #nav-bar nav, #nav-bar a {
+        display: none;
+    }
+
+    #menu-responsive-btn {
+        display: block;
+        cursor: pointer;
+    }
+    
+     /* Sección del banner */
+    .banner-section {
         flex-direction: column;
-        padding: 1em;
+        padding: 3em 1em;
         gap: 4em;
     }
 
-    .img-fs {
+
+    .img-sportman {
         width: 100%;
     }
 
@@ -284,27 +314,77 @@ form input {
         width: 108px;
     }
 
-    .menu {
-        width: 60px;
-    }
-
-    .first-s-content {
-        width: 100%;
-    }
-
-    header nav, header a {
-        display: none;
-    }
-    /* Section 2 */
-    .second-section {
-        display: flex;
-        flex-direction: column;
-        gap: 3em;
+    /* What's the difference btw pros */
+    .purple-section {
         background-color:#3cddf3;
-        padding: 2em 1em;
+        padding: 2em 3em;
+        justify-content: center;
+        flex-direction: column;
     }
 
     .right-text .left-text {
         width: 100%;
     }
+    /* Sección sobre ventajas */
+    .advantages {
+        padding: 3em 0 3em 2em;
+        justify-content: flex-end;
+        gap: 2em;
+    }
+    /* Cards */
+    #sanyo, #navarro {
+        display: none;
+    }
+
+    .box-btn a {
+        background-color: #232c50;
+        color: #ffffff;
+    }
+
+    #title-section {
+        border-radius: 30px 0 0 30px;
+        display: flex;
+        align-items: center;
+        gap: 1em;
+        background-color: #dcc8ec;
+        margin-bottom: 2em;
+    }
+
+    .art-th {
+        display: block;
+    }
+    .art-th .title, .btn-card {
+        display: none;
+    }
+    /* Estilos del footer */
+    footer {
+        padding: 70px 35px;
+    }
+
+    footer nav {
+        gap: 1em;
+        justify-content: space-around;
+        margin: 3em 0;
+    }
+
+    footer .icons {
+        display: flex;
+        gap: 3.5em;
+    }
+
+
+    footer .container, footer .brand {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .copyright {
+        justify-content: center;
+        margin-top: 4em;
+    }
+
+    form input {
+        padding: 10px 46px;
+    }
+
 }

@@ -7,9 +7,9 @@
     <title>Sportit</title>
 </head>
 <body>
-    <header>
+    <header id="nav-bar">
         <img class="logo" src="./img/logo.svg" alt="logo de Sportit">
-        <img class="menu" src="./img/icon-hamburger.svg" alt="Ícono hamburguesa">
+        <img id="menu-responsive-btn" src="./img/icon-hamburger.svg" alt="Ícono hamburguesa">
         <nav>
             <ul>
                 <li><a href="#">Sports</a></li>
@@ -22,15 +22,15 @@
         <a class="btn-purple" href="#">Contact</a>
     </header>
     <main>
-        <section class="first-section">
-            <img class="img-fs" src="./img/padel-intro.png" alt="Imagen de deportista">
-            <div class="first-s-content">
+        <section class="banner-section">
+            <img class="img-sportman" src="./img/padel-intro.png" alt="Imagen de deportista">
+            <div class="banner-content">
                 <h1>LIVE: Follow the Telcel Huawei Mexico Open 2022 for free </h1>
                 <p>The final Open of the 2022 World Padel Tour season is underway, don't miss out on any of the action!</p>
                 <a class="btn-purple" href="#">Contact</a>
             </div>
         </section>
-        <section class="second-section">
+        <section id="pros" class="purple-section">
             <div class="left-text">
                 <h2>What's different between pros?</h2>
             </div>
@@ -38,51 +38,63 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas aliquet consequat purus sit amet sodales. In faucibus ut nisi eu dignissim. Vestibulum fringilla velit sed tincidunt tincidunt.</p>
             </div>        
         </section>
-        <section class="third-section">
+        <section class="advantages">
             <article class="art-th">
-                <button class="btn-th">01</button>
-                <div>
+                <div id="title-section">
+                    <button class="btn-mb">01</button>
                     <h4>Track company-wide progress</h4>
+                </div>
+                <button class="btn-card">01</button>
+                <div>
+                    <h4 class="title">Track company-wide progress</h4>
                     <p>Donec elit est, mattis lacinia arcu eu, efficitur consequat augue. Nam tellus sem, tempus pellentesque egestas vitae, efficitur vel nulla. Etiam vel orci rutrum, placerat quam eget, consequat dolor.</p>
                 </div>
             </article>
             <article class="art-th">
-                <button class="btn-th">02</button>
-                <div>
+                <div id="title-section">
+                    <button class="btn-mb">01</button>
                     <h4>Advance built-in reports</h4>
+                </div>
+                <button class="btn-card">02</button>
+                <div>
+                    <h4 class="title">Advance built-in reports</h4>
                     <p>Donec elit est, mattis lacinia arcu eu, efficitur consequat augue. Nam tellus sem, tempus pellentesque egestas vitae, efficitur vel nulla. Etiam vel orci rutrum, placerat quam eget, consequat dolor.</p>
                 </div>
             </article>
             <article class="art-th">
-                <button class="btn-th">03</button>
-                <div>
+                <div id="title-section">
+                    <button class="btn-mb">01</button>
                     <h4>Everything you need in one place</h4>
+                </div>
+                <button class="btn-card">03</button>
+                <div>
+                    <h4 class="title">Everything you need in one place</h4>
                     <p>Donec elit est, mattis lacinia arcu eu, efficitur consequat augue. Nam tellus sem, tempus pellentesque egestas vitae, efficitur vel nulla. Etiam vel orci rutrum, placerat quam eget, consequat dolor.</p>
                 </div>
             </article>
         </section>
-        <section class="fourth-section">
+        <section class="cards-section">
             <h2>Best of the month</h2>
             <article>
-                <figure>
-                    <img src="./img/avatar-sanyo.png" alt="Imagen de Sanyo">
+                <figure id="sanyo">
+                    <img class="circle-img" src="./img/avatar-sanyo.png" alt="Imagen de Sanyo">
                     <h3>Sanyo</h3>
                     <p>Etiam fermentum, nulla eget gravida cursus, purus lectus feugiat mauris, ut suscipit massa ipsum eu neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
                 </figure>
-                <figure>
-                    <img src="./img/avatar.lebron.png" alt="Imagen de Lebron">
+                <figure id="box-card">
+                    <img class="circle-img" src="./img/avatar.lebron.png" alt="Imagen de Lebron">
                     <h3>Lebron</h3>
                     <p>Etiam fermentum, nulla eget gravida cursus, purus lectus feugiat mauris, ut suscipit massa ipsum eu neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
                 </figure>
-                <figure>
-                    <img src="./img/avatar-navarro.png" alt="Imagen de Navarro">
+                <figure id="navarro">
+                    <img class="circle-img" src="./img/avatar-navarro.png" alt="Imagen de Navarro">
                     <h3>Navarro</h3>
                     <p>Etiam fermentum, nulla eget gravida cursus, purus lectus feugiat mauris, ut suscipit massa ipsum eu neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
                 </figure>
             </article>
             <a class="btn-purple" href="#">More</a>
         </section>
-        <section class="second-section">
+        <section id="pros" class="purple-section">
             <div class="title">
                 <h2>Get to know the best
                     teams of the year</h2>
@@ -123,7 +135,7 @@
             </form>
         </div>
         <div class="copyright">
-            <div>
+            <div class="container">
                 <p>Copyright 2020. All Rights Reserved</p>
             </div>
         </div>
